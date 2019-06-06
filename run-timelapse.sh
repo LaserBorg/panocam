@@ -1,4 +1,4 @@
-#! bin/sh
+#!/bin/bash
 
 CURRENT_TIME=$(date +"%m-%d-%Y-%H-%M")
 DIR="${1:-/home/pi/Time-Lapses/$CURRENT_TIME}" #Name for a folder with today's date and time. All pictures from the time-lapse will be saved here. 

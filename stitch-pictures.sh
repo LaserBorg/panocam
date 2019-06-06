@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/bash
 
 #get the output file prefix
 PREFIX="$1"
@@ -10,8 +10,7 @@ FOV=360
 pto_gen --projection=1 --fov=$FOV -o "./project.pto" "$SOURCE/capture_1.jpg" "$SOURCE/capture_2.jpg" "$SOURCE/capture_3.jpg" "$SOURCE/capture_4.jpg" #Creates a Hugin project called project.pto, and imports the 4 images. 
 pto_template --output="./project.pto" --template=./template.pto "./project.pto" #Matches project.pto to the template
 
-pto2mk -o "./project.mk" -p $PREFIX "./project.pto" #Magic
-make -f "./project.mk" all
+hugin_executor --stitching --prefix=prefix project.pto
 
 # TODO: CLEAN UP TIFF FILES
 
