@@ -10,6 +10,10 @@ echo "Completed RPi.GPIO install"
 #Download and install Hugin Command Line Tools
 echo "Installing Hugin Command Line Tools"
 sudo apt-get install hugin-tools
+# cd ~/Downloads/ 
+# wget "http://http.us.debian.org/debian/pool/main/h/hugin/hugin-tools_2020.0.0+dfsg-2_armhf.deb"
+# sudo dpkg -i /home/pi/Downloads/hugin-tools_2020.0.0+dfsg-2_armhf.deb 
+# sudo apt-get install -f
 echo "Completed Hugin Tools install" #This doesn't actually check if the installation was successful, so it is possible for the install to fail but this message to still appear. 
 
 
