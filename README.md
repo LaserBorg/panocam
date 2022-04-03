@@ -1,5 +1,9 @@
-# README
+# PanoCam
+a Raspberry Pi Zero 2 based panoramic camera.
 
+
+![test](doc/paulbourke_diagram.jpg)
+[diagram courtesy of Paul Bourke, paulbourke.net](http://paulbourke.net/dome/dualfish2sphere/diagram.pdf)
 
 ## Setup
 Download or clone the repo on your Raspberry Pi. We need Hugin and enblend to create the 360 pictures.
@@ -50,3 +54,5 @@ You can run a time-lapse for however long you'd like. When you are finished, cop
 
 
 #### Learn more about this project at [http://ter.ps/360Camera](http://ter.ps/360Camera).
+
+
